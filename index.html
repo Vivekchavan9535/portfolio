@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="ri-close-line fas" onclick="closemenu()"></i>
+                </ul>
+             
+
+                <div class="logo">
+                    <h1> <span>V</span>ivek<span>C</span>havan.</h1>
+                </div>
+                <i class="ri-menu-fill fas" onclick="openmenu()"></i>
+
+              
+                
+            </nav>
+
+            <div class="header-text">
+                <h1>Web Developer 👋</h1>
+                <p>Hi, I'm <span>Vivek Chavan </span>A passionate Web Developer based in Kalaburgi, karnataka. 📍
+                </p>
+                <i class="ri-linkedin-box-fill"></i>
+                <i class="ri-github-fill"></i>
+                <i class="ri-instagram-line"></i>
+
+                <div class="skills">
+                    <h1>Skills <span>|</span></h1>
+                    <div class="icon"><a href=""><img src="images/html.png" alt=""></a></div>
+                    <div class="icon"> <a href=""><img src="images/css-3.png" alt=""></a></div>
+                    <div class="icon"><a href=""><img src="images/js.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+    <!-- about section -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col1">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque autem sapiente magnam dolores nemo, non doloremque obcaecati odio consequatur reprehenderit!</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>PhotoShop</li>
+                        </ul>
+
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li>Fresher</li>
+                        </ul>
+
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li>Bacherlor in Computer Aplication</li>
+                            <p>Swami Vivekananda Institute of managemnet (2022-2025)</p>
+                        </ul>
+
+                    </div>
+
+                </div>
+                <div class="about-col2"><img src="images/png about.png" alt=""></div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- portfolio -->
+
+    <div id="portfolio">
+        <div class="container">
+            <div class="sub-title">
+                <h1>My Work</h1>
+            </div>
+            <div class="worklist">
+                <div class="work">
+                    <img class="img1" src="https://themewagon.com/wp-content/uploads/2020/09/estore-1.jpg" alt="">
+                    <div class="layer">
+                        <h2>E-commerce Website</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae repellendus, ea asperiores
+                            aperiam quod in obcaecati ad culpa incidunt a.</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img class="img2"
+                        src="https://themeforest.img.customer.envatousercontent.com/files/245001410/Preview/01-FitClub-fitness-and-gym.jpg?auto=compress%2Cformat&fit=crop&crop=top&w=590&h=300&s=4b876e97f8c789581ec2e2509b456dcf"
+                        alt="">
+                        <div class="layer">
+                            <h2>Gym Website</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae repellendus, ea asperiores
+                                aperiam quod in obcaecati ad culpa incidunt a.</p>
+                        </div>
+                        
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- contact -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="ri-send-plane-fill"></i>: vivekchavan942@gmail.com</p>
+                    <p><i class="ri-phone-line"></i> : +91 9535840603</p>
+
+                    <div class="social-icons">
+                        <a href=""><i class="ri-linkedin-box-fill"></i></a>
+                        <a href=""><i class="ri-github-fill"></i></a>
+                        <a href=""><i class="ri-instagram-line"></i></a>
+                        
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="text" name="email" placeholder="Enter Your Email" required>
+                        <textarea name="Meassage"  rows="6"  placeholder="Your Meassage"></textarea>
+                        <button type="submit" class="btn1">Submit</button>
+                    </form>
+                    <br>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="copyright">
+            <p>Copyright © 2023 . All rights are reserved </p>
+        </div>
+    </div>
+
+
+
+    <script src="script.js">
+
+
+  
+    </script>
+
+</body>
+
+</html>
